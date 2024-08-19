@@ -11,8 +11,8 @@ var homeSwiper = new Swiper (".home-slider",{
     loop:true,
     centeredSlides:true,
     navigation: {
-        nextE1: "swiper-button-next",
-        prevE1: "swiper-button-prev"
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
     },
 });
 
@@ -26,8 +26,8 @@ var foodSwiper = new Swiper (".food-slider",{
         clickable: true,
     },
     navigation: {
-        nextE1: "swiper-button-next",
-        prevE1: "swiper-button-prev"
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
     },
 });
 
@@ -41,7 +41,23 @@ var gallerySwiper = new Swiper (".gallery-slider",{
         clickable: true,
     },
     navigation: {
-        nextE1: "swiper-button-next",
-        prevE1: "swiper-button-prev"
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
     },
+});
+
+
+document.addEventListener("DOMContentLoaded",function(){
+    const boxs = document.querySelectorAll(".box");
+    const home_btn = document.querySelector(".home_btn");
+
+    boxs.forEach(function(box){
+        box.addEventListener("click", function(){
+            const boxId = box.getAttribute("data-id");
+            window.location.href = `details.html?id=${boxId}`;
+        });
+    });
+    home_btn.addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
 });

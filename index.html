@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
         </style>
@@ -14,10 +18,10 @@
 </head>
 <body>
     <section class="header">
-        <a href="#" class="logo"><i class="fas.fa-untensils">food.</i></a>
+        <a href="#" class="logo"><i class="fas fa-untensils">food.</i></a>
 
         <nav class="navbar">
-            <a href="#home">home</a>
+            <a  class="home_btn" href="#home">home</a>
             <a href="#about">about</a>
             <a href="#food">food</a>
             <a href="#gallery">gallery</a>
@@ -72,7 +76,7 @@
 
                 We organize events of various formats for you, from intimate family vacations to loud celebrations for a large number of guests.</p>
        <a href="#" class="btn">read more</a>
-       <div class="icons-conteiner">
+       <!--<div class="icons-conteiner">
         <div class="icons">
             <img src="img/icon3.jpeg" alt="">
             <h3>quality food</h3>
@@ -88,7 +92,7 @@
             <h3>expert chef</h3>
         </div>
        </div>
-            </div>
+            </div>-->
     </section>
 
     <section class="menu" id="menu">
@@ -101,37 +105,37 @@
                 <div class=" swiper-slide slide">
                     <h3 class="title">breakfast</h3>
                     <div class="box-conteiner">
-                        <div class="box">
+                        <div class="box" data-id="apple-pie">
                             <div class="info">
-                            <h3>morning breakfast</h3>
+                            <h3>apple pie with ice cream</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
                         </div>
-                        <div class="box">
+                        <div class="box" data-id="pancakes">
                             <div class="info">
-                                <h3>morning breakfast</h3>
+                                <h3>pancakes</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
                         </div>
-                        <div class="box">
+                        <div class="box" data-id="english_breakfast">
                             <div class="info">
-                            <h3</h3>
+                            <h3>english breakfast</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
                         </div>
-                        <div class="box">
+                        <div class="box" data-id="scramble">
                             <div class="info">
-                            <h3>morning breakfast</h3>
+                            <h3>scramble</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
                         </div>
-                        <div class="box">
+                        <div class="box" data-id="avocado_toast">
                             <div class="info">
-                            <h3>morning breakfast</h3>
+                            <h3>avocado toast</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
@@ -146,35 +150,35 @@
                     <div class="box-conteiner">
                         <div class="box">
                             <div class="info">
-                            <h3>delicious lunch</h3>
+                            <h3>bussiness lunch№1</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
                         </div>
                         <div class="box">
                             <div class="info">
-                                <h3>delicious lunch</h3>
+                                <h3>bussiness lunch№2</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
                         </div>
                         <div class="box">
                             <div class="info">
-                                <h3>delicious lunch</h3>
+                                <h3>bussiness lunch№3</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
                         </div>
                         <div class="box">
                             <div class="info">
-                                <h3>delicious lunch</h3>
+                                <h3>bussiness lunch№4</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
                         </div>
                         <div class="box">
                             <div class="info">
-                                <h3>delicious lunch</h3>
+                                <h3>bussiness lunch№5</h3>
                             <p></p>
                             </div>
                             <div class="price">$49.99</div>
@@ -496,10 +500,11 @@
                     <img src="img/blog1.jpg" alt="">
                 </div>
                 <div class="content">
-                    <a href="#" class="title">food blogs 2023</a>
+                    <a href="https://pinchofyum.com/" class="title">food blogs 2023</a>
                     <span>by admin / 21st may, 2023</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, libero?</p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="https://pinchofyum.com/" class="btn">read more</a>
+                
                 </div>
             </div>
 
@@ -508,10 +513,10 @@
                     <img src="img/blog2.jpg" alt="">
                 </div>
                 <div class="content">
-                    <a href="#" class="title">food blogs 2023</a>
+                    <a href="https://iamafoodblog.com/" class="title">food blogs 2023</a>
                     <span>by admin / 21st may, 2023</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, libero?</p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="https://iamafoodblog.com/" class="btn">read more</a>
                 </div>
             </div>
 
@@ -520,16 +525,59 @@
                     <img src="img/blog3.jpg" alt="">
                 </div>
                 <div class="content">
-                    <a href="#" class="title">food blogs 2023</a>
+                    <a href="https://natashaskitchen.com/" class="title">food blogs 2023</a>
                     <span>by admin / 21st may, 2023</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, libero?</p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="https://natashaskitchen.com/" class="btn">read more</a>
                 </div>
             </div>
 
         </div>
 
     </section>
+
+    <section class="footer">
+        
+           <div class="icons-conteiner-1">
+            <div class="icons_">
+                <i class="fa fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>07:00am to 10:00pm</p>
+            </div>
+
+            <div class="icons_">
+                <i class="fa fa-phone"></i>
+                <h3>phone</h3>
+                <p>+38 (098) 111 22 33</p>
+                <p>+38 (098) 444 55 66</p>
+            </div>
+
+            <div class="icons_">
+                <i class="fa fa-envelope"></i>
+                <h3>email</h3>
+                <p>restaurant.food@gmail.com</p>
+                <p>food.restaurant@gmail.com</p>
+            </div>
+
+            <div class="icons_">
+                <i class="fa fa-map"></i>
+                <h3>address</h3>
+                <p>lviv</p>
+                <p>Kyiv</p>
+            </div>
+
+           </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin-in"></a>
+            </div>
+        
+        <div class="credit">created by <span>Yustyna Malai</span> | all rights reserved</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
     
