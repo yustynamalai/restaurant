@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,123 +9,119 @@
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- font awesome cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
-        </style>
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
 
     <div id="menu-details">
         Loading.....
     </div>
-   <!-- <script>
-        document.addEventListener("DOMContentLoaded", function() {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             const params = new URLSearchParams(window.location.search);
             const boxId = params.get("id");
             const boxDetailsContainer = document.getElementById("menu-details");
             const boxData = {
-                apple-pie: {
-                    menu: "breakfast menu"
-                    title:"apple pie with ice cream",
-                    description:"Apple pie with ice cream is a delightful combination of warm homemade dessert and cool creaminess. Fragrant apples in a golden crust paired with rich ice cream create a perfect harmony of flavors. Each bite offers true pleasure, blending the warmth of the pie with the refreshing chill.",
-                    images:  "./img/img/home-slide-coffe.jpg",
+                'apple-pie': {
+                    menu: "breakfast menu",
+                    title: "apple pie with ice cream",
+                    description: "Apple pie with ice cream is a delightful combination of warm homemade dessert and cool creaminess. Fragrant apples in a golden crust paired with rich ice cream create a perfect harmony of flavors. Each bite offers true pleasure, blending the warmth of the pie with the refreshing chill.",
+                    images: "./img/pasta.jpg",
                     price: "$49.99",
                 },
+                
 
             };
             if (boxData[boxId]) {
                 const box = boxData[boxId];
-                const priceWithTax = parseFloat(box.price) +20;
-                boxDetailsContainer.innerHTML =`-->
+                const priceWithTax = parseFloat(box.price) + 20;
+                boxDetailsContainer.innerHTML = `
                  <section class="header">
-        <a href="#" class="logo"><i class="fas fa-untensils">food.</i></a>
+                    <a href="#" class="logo"><i class="fas fa-untensils">food.</i></a>
 
-        <nav class="navbar">
-            <a  class="home_btn" href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#food">food</a>
-            <a href="#gallery">gallery</a>
-            <a href="#menu">menu</a>
-            <a href="#order">order</a>
-            <a href="#blogs">blogs</a>
-        </nav>
-        <div id="menu-btn" class="fas fa-bars"></div>
-    </section>
+                    <nav class="navbar">
+                        <a  class="home_btn" href="#home">home</a>
+                        <a href="#about">about</a>
+                        <a href="#food">food</a>
+                        <a href="#gallery">gallery</a>
+                        <a href="#menu">menu</a>
+                        <a href="#order">order</a>
+                        <a href="#blogs">blogs</a>
+                    </nav>
+                    <div id="menu-btn" class="fas fa-bars"></div>
+                </section>
 
-<section class="menu" id="menu">
+                <section class="menu" id="menu">
+                        <div class="heading">
+                            <span>our menu</span>
+                            <h3>${box.menu}</h3>
+                        </div>
+                        <div class="box-container">
+                            
+                            <div class="box">
+                                <div class="content">
+                                    <img src="${box.images}" alt="" >
+                                    <h3>${box.title}</h3>
+                                    <p>${box.description}</p>
+                                    <p class="price">${box.price}</p>
+                                    <a href="#home" class="btn">go home</a>
+                                </div>
+                            </div>
+                    </section>
+                    <section class="footer">
+                        
+                        <div class="icons-conteiner-1">
+                            <div class="icons_">
+                                <i class="fa fa-clock"></i>
+                                <h3>opening hours</h3>
+                                <p>07:00am to 10:00pm</p>
+                            </div>
+<div class="icons_">
+                                <i class="fa fa-phone"></i>
+                                <h3>phone</h3>
+                                <p>+38 (098) 111 22 33</p>
+                                <p>+38 (098) 444 55 66</p>
+                            </div>
 
-        <div class="heading">
-            <span>our menu</span>
-            <h3>${box.menu}</h3>
-        </div>
-        <div class="box-container">
-            
-            <div class="box">
-                <div class="content">
-                    <img src="${box.images}" alt="">
-                    <h3>${box.title}</h3>
-                    <p>${box.description}</p>
-                    <p class="price">${box.price}</p>
-                    <a href="#home" class="btn">go home</a>
-                </div>
-            </div>
-            
-            
+                            <div class="icons_">
+                                <i class="fa fa-envelope"></i>
+                                <h3>email</h3>
+                                <p>restaurant.food@gmail.com</p>
+                                <p>food.restaurant@gmail.com</p>
+                            </div>
 
-    </section>
+                            <div class="icons_">
+                                <i class="fa fa-map"></i>
+                                <h3>address</h3>
+                                <p>lviv</p>
+                                <p>Kyiv</p>
+                            </div>
 
-
-
-    <section class="footer">
-        
-           <div class="icons-conteiner-1">
-            <div class="icons_">
-                <i class="fa fa-clock"></i>
-                <h3>opening hours</h3>
-                <p>07:00am to 10:00pm</p>
-            </div>
-
-            <div class="icons_">
-                <i class="fa fa-phone"></i>
-                <h3>phone</h3>
-                <p>+38 (098) 111 22 33</p>
-                <p>+38 (098) 444 55 66</p>
-            </div>
-
-            <div class="icons_">
-                <i class="fa fa-envelope"></i>
-                <h3>email</h3>
-                <p>restaurant.food@gmail.com</p>
-                <p>food.restaurant@gmail.com</p>
-            </div>
-
-            <div class="icons_">
-                <i class="fa fa-map"></i>
-                <h3>address</h3>
-                <p>lviv</p>
-                <p>Kyiv</p>
-            </div>
-
-           </div>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin-in"></a>
-            </div>
-        
-        <div class="credit">created by <span>Yustyna Malai</span> | all rights reserved</div>
-    </section>
-               <!-- ` }else{
-                    boxDetailsContainer.innerHTML=`<h1>no dish found</h1>`
-                }
-        }),
-    </script>-->
+                        </div>
+                            <div class="share">
+                                <a href="#" class="fab fa-facebook-f"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-instagram"></a>
+                                <a href="#" class="fab fa-linkedin-in"></a>
+                            </div>
+                        
+                        <div class="credit">created by <span>Yustyna Malai</span> | all rights reserved</div>
+                    </section>
+                ` } else {
+                boxDetailsContainer.innerHTML = <h1>no dish found</h1>
+            }
+        })
+    </script>
     <script src="./js/main.js"></script>
 </body>
+
+</html>
+    <script src="./js/main.js"></script>
+</body>
+
 </html>
